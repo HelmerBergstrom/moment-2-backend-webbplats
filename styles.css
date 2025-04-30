@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+    background-color: #558957;
+    color: white;
+}
+header {
+    background-color: #1A1A1A;
+    padding: 10px;
+}
+#menu {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+#menu li a {
+    color: #e8ddbe;
+    margin: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+#menu li a:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
