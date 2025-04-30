@@ -1,7 +1,7 @@
 const list = document.getElementById("experienceList");
 
-let url = "http://127.0.0.1:3001/workexperience";
-
+if(list) {
+    let url = "http://127.0.0.1:3001/workexperience";
 fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -24,3 +24,7 @@ fetch(url)
             list.appendChild(article)
         });
     });
+};
+const form = document.getElementById("experienceForm");
+const confirmMessage = document.getElementById("confirmMessage");
+
