@@ -10,14 +10,17 @@ fetch(url)
             return;
         };
         data.forEach(exp => {
-            const li = document.createElement('li');
-            li.innerHTML = `
+            const article = document.createElement('article');
+            const startdate = exp.startdate.slice(0, 10);
+            const enddate = exp.enddate.slice(0, 10);
+
+            article.innerHTML = `
             <h2> ${exp.companyname} </h2>
             <h3> ${exp.jobtitle} </h3>
-            <p> ${exp.location} </p>
-            <p> ${exp.startdate} - ${exp.enddate} </p>
-            <p> ${exp.description} </p>
+            <p> <strong> Plats: </strong> ${exp.location} </p>
+            <p> <strong> Tid: </strong> ${startdate} - ${enddate} </strong></p>
+            <p><strong> Arbetsbeskrivning: </strong> ${exp.description} </p>
             `
-            list.appendChild(li)
+            list.appendChild(article)
         });
     });
