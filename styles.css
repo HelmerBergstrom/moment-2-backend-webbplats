@@ -3,16 +3,25 @@
     margin: 0;
     border: 0;
 }
+header {
+    background-color: #1A1A1A;
+    padding: 10px;
+}
 body {
     background-color: #558957;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-header {
-    background-color: #1A1A1A;
-    padding: 10px;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
 }
-#menu {
+
+/* MENY */
+.menu {
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -20,7 +29,7 @@ header {
     align-items: center;
     list-style: none;
 }
-#menu li a {
+.menu li a {
     color: #e8ddbe;
     margin: 30px;
     font-size: 20px;
@@ -30,21 +39,14 @@ header {
     border-radius: 10px;
     transition: 0.5s ease;
 }
-#menu li a:hover {
+.menu li a:hover {
+    background-color: rgb(90, 90, 90);
+}
+.active-menu {
     background-color: rgb(90, 90, 90);
 }
 
-#home-page-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#home-page-main h1 {
-    margin-top: 30px;
-}
-
-/* Section */
+/* STARTSIDA */
 #experienceList {
     margin: 30px;
 }
@@ -61,4 +63,117 @@ header {
 }
 #experienceList h3 {
     margin-bottom: 15px;
+}
+
+/* LÄGG TILL-sidan */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+header {
+    background-color: #1A1A1A;
+    padding: 10px;
+}
+body {
+    background-color: #558957;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* MENY */
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.menu li a {
+    color: #e8ddbe;
+    margin: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.menu li a:hover {
+    background-color: rgb(90, 90, 90);
+}
+.active-menu {
+    background-color: rgb(90, 90, 90);
+}
+
+/* STARTSIDA */
+#experienceList {
+    margin: 30px;
+}
+#experienceList article {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#experienceList h2 {
+    margin-bottom: 7px;
+    text-decoration: underline;
+}
+#experienceList h3 {
+    margin-bottom: 15px;
+}
+
+/* LÄGG TILL-sidan */
+#experienceForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 5px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0px 5px 10px #333;
+    width: 90%;
+    max-width: 500px;
+    transition: all 0.3s ease;
+    margin-bottom: 50px;
+}
+
+#experienceForm label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#experienceForm input,
+#experienceForm textarea {
+    width: 95%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+}
+#experienceForm button {
+    padding: 12px;
+    background-color: #e8ddbe;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-top: 20px;
+}
+
+#experienceForm button:hover {
+    background-color: #333;
+    color: white;
 }

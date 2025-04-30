@@ -8,16 +8,40 @@
 </head>
     <header>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html"> STARTSIDA </a></li>
-                <li><a href="#"> LÄGG TILL </a></li>
+                <li><a href="#" class="active-menu"> LÄGG TILL </a></li>
                 <li><a href="about.html"> OM </a></li>
             </ul>
         </nav>
     </header>
 <body>
-    
+    <main>
+        <h1>Lägg till erfarenhet</h1>
 
+        <form id="experienceForm">
+            <label for="companyname">Företagsnamn:</label>
+            <input type="text" id="companyname" name="companyname">
+
+            <label for="jobtitle">Jobbtitel:</label>
+            <input type="text" id="jobtitle" name="jobtitle">
+
+            <label for="location">Plats:</label>
+            <input type="text" id="location" name="location">
+
+            <label for="startdate">Startdatum:</label>
+            <input type="date" id="startdate" name="startdate">
+
+            <label for="enddate">Slutdatum:</label>
+            <input type="date" id="enddate" name="enddate">
+
+            <label for="description">Beskrivning:</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+
+            <button type="submit">LÄGG TILL </button>
+        </form>
+        <p id="confirmMessage"></p>
+    </main>
 
     <script src="main.js"></script>
 </body>
